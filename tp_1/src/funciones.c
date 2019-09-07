@@ -233,14 +233,15 @@ float multiplicacion(float numeroA, float numeroB) {
  * return muestra el resultado del factorial
  */
 
-int factorial(float num) {
-	int numero = 1;
-	int i;
-
-	for (i = 1; i <= num; i++) {
-		numero = numero * 1;
+int factorial(float n)
+{
+	int resp;
+	if(n<=1)
+	{
+	  return 1;
 	}
-	return numero;
+	resp=n* factorial(n-1);
+	return (resp);
 }
 
 int hacerCalculos(void) {
